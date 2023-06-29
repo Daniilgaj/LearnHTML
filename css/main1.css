@@ -1,0 +1,30 @@
+table {
+    color:black;
+    border-radius: 7px;
+}
+[href="TempPages/str2.html"] {
+    color: blue;
+}
+[href="https://ya.ru"] {
+    color: blue;
+}
+[type="text"] {
+    border-radius: 7px;
+    padding: 4px;
+    border: 4xp;
+    
+}
+#meeting-time {
+    border-radius: 7px;
+    padding: 4px;
+    border: 4xp;
+}
+.appleClass {
+    color: green;
+}
+.orangeClass {
+color: rgb(231, 150, 0);
+}
+.fixClass {
+    color: black;
+}
