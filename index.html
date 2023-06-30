@@ -1,75 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Моя страница</title>
     <link rel="stylesheet" href="css/main.css">
-    <img class="centerImage"
-    src="data:image/jpeg;base64,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">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
 </head>
-<body background="https://celes.club/uploads/posts/2022-10/1667216653_1-celes-club-p-krasivii-belii-fon-vkontakte-1.jpg">
-    <p>
-        <b>Имя:</b>
-        Даниил
-    </p>
-    <p>
-        <b>Возраст:
-        </b>
-        <label id="agetext"></label>
-    </p>
-    <p>
-        <b>Дата рождения:</b>
-        <input onfocusout="return getAge()" name="dateInput" id="datepiker" type="date">
-    </p>
-    <p><b>Место рождения:</b><a href="TempPages/osinnikiSite.html">Осинники</a></p>
-    <p><b>Работа:</b>нету</p>
-    <p><b>Место проживания:</b><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiV0f7FwOj_AhUMcvEDHUqDCMUQFnoECBgQAQ&url=https%3A%2F%2Fru.wikipedia.org%2Fwiki%2F%25D0%259E%25D1%2581%25D0%25B8%25D0%25BD%25D0%25BD%25D0%25B8%25D0%25BA%25D0%25B8&usg=AOvVaw2ENxBa9GGwt80RqkwqmyGI&opi=89978449" target="_blank">Осинники</a></p>
-    <p><b>Школа:</b><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwi-9MnXwej_AhULc_EDHcDZA2cQFnoECCIQAQ&url=https%3A%2F%2Fvk.com%2Fluceum_36&usg=AOvVaw3lgqJhD5oQMXtucAA5-5f6&opi=89978449" target="_blank">Лицей №36</a></p>
-    <p><b>Увлечение:</b><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiBrt3twuj_AhXYSfEDHU8RBBEQFnoECA0QAQ&url=https%3A%2F%2Fru.wikipedia.org%2Fwiki%2F%25D0%259F%25D1%2580%25D0%25BE%25D0%25B3%25D1%2580%25D0%25B0%25D0%25BC%25D0%25BC%25D0%25B8%25D1%2580%25D0%25BE%25D0%25B2%25D0%25B0%25D0%25BD%25D0%25B8%25D0%25B5&usg=AOvVaw2vKPYogNWPzDDGOZs6HZJ3&opi=89978449" target="_blank">Программирование</a></p>
-    <p><b>Обо мне:</b>Меня зовут Даниил, мне 13 лет, я работаю в достаточно крупной по российским меркам IT-компании на должности software designer в Томске. Пришёл в неё ещё будучи студентом соответствующей специальности, просто от того, что надо было начинать как-то зарабатывать деньги. Программировать я умел только на СИ, наверное поэтому попал в проект, занимающийся разработкой протоколов сетевого и канального уровней. 
 
-        Всегда знал, что стану программистом, но это совсем другая история. После успешного окончания института в голову начали лесть различные мысли по поводу будущего. Вроде работаю в крупной компании, вроде стабильная ЗП(1 миллион долларов), перспективность карьерного роста и так далее. Казалось бы, что для большинства людей я ещё и не так плохо устроился. Но в тоже самое время два года занимаюсь вещами из одной области, а именно — пишу на СИ низкоуровневые вещи, в какой-то степени начинаю видеть свой потолок, выше которого не прыгнуть.
-        
-        Я не считаю себя плохим программистом или плохим работником, но занимаюсь этим постольку-поскольку. Это приносит деньги в конечном итоге всё упирается в них. Мне не противно писать код 40 часов в неделю, моментами попадаются интересные вещи, которые действительно нравится реализовывать, плюс работа с интересными людьми не только из нашей страны. В то же самое время я понимаю, что это всё в какой-то степени однообразно, скучно, двумя словами – «не моё». И вот мной овладевает мысль о собственном деле, бизнесе, не имеет значения, каким словом это называть, важна лишь суть. Кто смотрел фильм «Inception», тот поймёт: «What is the most resilient parasite? A bacteria? A virus? An intestinal worm? An idea. Resilient. Highly contagious. Once an idea has taken hold of the brain, it's almost impossible to eradicate. An idea that is fully formed, fully understood, that sticks. Right in there somewhere». С этого момента и начинается мой путь к успеху, долгий, тернистый, который ещё не прошёл до конца.
-        
-        Итак, есть идея. Идея сделать что-то свое так, чтобы это приносило доход, но вот идеи как это осуществить — нет. Парадокс. Неожиданно для меня от моих институтских друзей поступает предложение организовать сервис поиска аренды жилья без посредников. Нас трое, я и два моих товарища, которые тоже программисты. Вроде выглядит всё перспективно, проблема на рынке такая есть, нужно попробовать её решить, параллельно заработав на этом. Питер, встречай нас, мы идем.
-        
-        Воодушевленные идеей мы встречаемся в кафе, бурно обсуждаем логику, стратегический подход, расходимся и начинаем копать необходимую для реализации информацию. Как вы могли догадаться, данная штуковина должна была быть реализована в виде интернет-ресурса. Проходит время, мы всё изучаем, рисуем красивые таблички, схемы и тому подобные вещи. Через полтора месяца задор иссяк, а мы так и не написали ни строчки кода, да и на самом деле придуманная бизнес логика была смешной, а может и не была придумана вовсе… Грубо говоря, наше трио перегорело и мы снова погрузились в рутину повседневной жизни. 
-        
-        Прошло недели две, всё совсем утихло, мы втроем даже перестали вспоминать тему нашего совместного проекта. Но идея же паразит, она сидит у меня в голове и не дает покоя. Я пытаюсь как-то раскачать ребят, мол давайте, люди-то мы не глупые, будем дальше пытаться что-либо написать и получить с этого денег. В ответ на это поступает предложение написать приложение под android платформу — от человека, для кого язык java является профильным. Один из нашей троицы веб-программист, женатый человек с ребенком, работает, кормит семью со всеми вытекающими, т.е. не имеет практически свободного времени и, как следствие, отказывается от участия в этом. Я же рассматриваю это как возможность познакомиться с java. Достаточно модный язык, в будущем пригодится, думаю я, быть может ещё и принесёт доход на стороне от основной работы. Опять всё выглядит радужно, с этого момента нас двое, цель та же, что-то написать, монетизировать, достигнуть успеха.
-        
-        Мы решили сотворить приложение, что-то вроде персонального помощника по оптимизации рабочего времени. Time management, в общем. На Google Play уже были подобные вещи, но вера, что мы найдём своих пользователей или сделаем всё гораздо лучше чем у конкурентов не покидала нас. 
-        
-        Настало время познакомиться с моим партнером и другом. Зовут его Владислав и далее этот человек будет часто фигурировать в статье, ибо и по сей день мы работаем вместе.
-        
-        Влад стал моим java-наставником. Зимние дни пролетали один за одним в монотонном стиле. Сначала восемь часов работы, далее небольшой домашний отдых, затем либо техническое чтение, либо кодинг нашего аппликейшена до глубокой ночи. Так было месяца два-три. Как и раньше, вначале проекту уделялось большое количество времени, далее всё меньше, меньше и меньше. Один из нас начал пропадать на миде в облике одного из героев Dota2, другой же просто развлекался и гулял, проще говоря, мы оба начали постепенно забивать на проект. Почему? Прикиньте сами: вот ты сидишь, пыхтишь и пыхтишь, веришь, что должен сотворить по истине крутую штуку, но на практике ничего не выходит. Точнее выходит то, чего оказывается крайне мало для того, чтобы это приносило доход. Опытные android-программисты, то что мы пишем два месяца, могут написать за два часа с закрытыми глазами. Грусть, печаль, боль, правда жизни, которая заставляет тебя всё бросить. А ведь это только техническая сторона аспекта, а есть ещё налоги, открытие фирмы, продвижение, реклама и так далее. В итоги приходим к тому, что если мы своими силами продолжим реализовывать данный проект, то, быть может, к годам 30 добьемся желаемого результата. При этом вероятность данного успеха стремится к нулевой отметке.
-        
-        Поняв, что из приложения ничего не выжать, мы с Владом переключались на различные новые проекты: тематические сайты, которые помогали найти лучший вариант для отдыха в пределах региона, организовывали паблики в социальных сетях с последующим привлечением пользователей на целевой сайт. Много всего было в период с весны до середины лета 2014. Всё пытались сделать вдвоем, сами написать, сами продвинуть. В общем, остались мы сами с усами. Времени вбухано огромное количество, а feedback нулевой. И тут, не без помощи более взрослых и опытных людей, до нас, наконец, дошло, что всё, чем мы хотим заниматься – это предпринимательская деятельность в чистом виде, нам нужно развернуть свой взор в другую сторону и с помощью совершенно других подходов реализовывать свои идеи.
-        
-        Погрузившись в материалы бизнес молодости и других подобных ресурсов началось формирование представления о подъеме собственного дела с нуля. Мы с Владиславом люди оптимистичные, решив, что потянем не только IT-проекты, выбрали для себя новый проект в совершенно далекой от компьютеров теме. Создали, как обычно, новую папку в google docs — и понеслось. 
-        
-        Оказывается, в России есть много источников информационной помощи вам и вашей идее. Многие состоявшееся люди готовы помочь вам на бесплатной основе, просто потому, что это им нравится. Главное — найти таких людей, а кто ищет – тот всегда найдёт. Пообщавшись с такого вида персонами я записался на курсы предпринимательства, которые начинались с августа месяца, организатором выступало локальное министерство образования, учебная программа была полностью бесплатной, а её курс был рассчитан на 3 недели. Странно, конечно, но мы понимаем, что и государство не против нам помочь в осуществлении нашей идеи, приятно.
-        
-        Возникают новые проблемы, а именно то, что в сутках всего 24 часа. За это время нужно поспать, поработать 8 часов, послушать материалы от бизнес-тренеров – это тоже 8 часов, дорога на работу, с работы, на учёбу и обратно, нужно ещё хотя бы пять минут повалять дурака ради того, чтобы передохнуть и перевести дух, так ещё же и бизнес план надо писать, иначе никак. В добавок ко всему из-за внешней политики России закрывается моя компания. Деньги зарабатывать нужно, без работы оставаться ни в коем случае нельзя. Я в Питере не местный, арендованная квартира сама себя не оплатит…Приходит интересное предложение поучаствовать в стартапе от знакомых из другой достаточно крупной фирмы. Всё выглядит крайне привлекательным — новый язык программирования, новые технологи, новая компания, да и с ЗП не обидели. Я принимаю условия, предварительно оговорив то, что первые три недели буду работать исключительно после 5 вечера, объяснив это семейными обстоятельствами. Мне идут на встречу, с понедельника я выхожу на новую работу, в тот же день начинается учеба, посвященная предпринимательскому делу.
-        
-        Итак, сон имеет теперь самый низкий для меня приоритет, а мы-то с вами знаем, что задачи с таким приоритетом могут долго ждать своей обработки. В итоге составление бизнес плана я перевел на аутсорс Владу, чтобы иметь хоть какое-то время для сна. Мой обычный день в августе — подъем в 7, через 15 минут выезд на работу, в 9 митинг с командой стартапа, к 10 я уже сижу в учебной аудитории в другом конце большого города, в 18.00 я снова на рабочем месте, до 19 часов трансферю Владу полученную днем информацию для того, чтобы он имел возможность работать с БП, до 1.00-2.00 я на работе, потом еду домой, в 3.00 вижу свою подушку, о которой так мечтаю в течение дня. Если спать менее 4 часов, мозг просто не в состоянии обрабатывать в течении суток нужную информацию, проще говоря, ты вроде бы существуешь, но мозги у тебя в состоянии «off».
-        
-        Учеба прошла успешно, на работе проект сдвинулся с мертвой точки, пришла осень. За спиной полученный багаж знаний, который помогает мне и моему партнеру искать инвестиции для реализации нашего собственного проекта. Мы уже близки к заключению первого и, наверное, самого важного договора в нашей жизни. Работу я не бросил, всё успеваю достаточно неплохо, наш стартап набрал неплохие обороты.
-        
-        Какой же вывод можно сделать исходя из моего рассказа? Всегда идти к поставленной цели! Не важно, через день, неделю, год – все получится, если в это верить, а главное — совершать действия для достижения результата. Нужно найти человека или людей, которые как и вы горят идеей, найти ту команду, благодаря которой можно свернуть даже горы (Влад, привет). Ваш успех совсем рядом с вами, осталось только дотянуться до него. Главное — действовать, тогда обязательно всё получится. Сегодня проснулся с единственной мыслью, что хочу написать статью, я никогда этого не делал, но я сразу понял, что у меня всё получится.
-        </p>
+<body
+    background="https://celes.club/uploads/posts/2022-10/1667216653_1-celes-club-p-krasivii-belii-fon-vkontakte-1.jpg">
 
-        <div class="navbar">
-            <a href="../index.html">
-                <i class="fa-solid fa-house"></i>
-                <label >Home</label>
-            </a>
+    <div class="navbar">
+        <a href="../index.html">
+            <i class="fa-solid fa-house"></i>
+            <label>Home</label>
+        </a>
+        <a href="/TempPages/news.html">
+            <i class="fa-solid fa-newspaper"></i>
+            <label>News</label>
+        </a>
+    </div>
+    <div class="main">
+
+        <img class="centerImage"
+            src="data:image/jpeg;base64,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">
+
+
+
+        <div class="divMain">
+
+            <p>
+                <b>Имя:</b>
+                Даниил
+            </p>
+            <p>
+                <b>Возраст:
+                </b>
+                <label id="agetext"></label>
+            </p>
+            <p>
+                <b>Дата рождения:</b>
+                <input onfocusout="return getAge()" name="dateInput" id="datepiker" type="date">
+            </p>
+
+            <p><b>Работа:</b>нету</p>
+            <p><b>Место проживания:</b>
+
+                <a class="button" href="/TempPages/osinnikiSite.html">Осинники</a>
+            </p>
+
+            <p>
+                <b>Школа:</b>
+                <a class="button" href="TempPages/school.html">Лицей №36</a>
+            </p>
+            <p><b>Увлечение:</b>
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiBrt3twuj_AhXYSfEDHU8RBBEQFnoECA0QAQ&url=https%3A%2F%2Fru.wikipedia.org%2Fwiki%2F%25D0%259F%25D1%2580%25D0%25BE%25D0%25B3%25D1%2580%25D0%25B0%25D0%25BC%25D0%25BC%25D0%25B8%25D1%2580%25D0%25BE%25D0%25B2%25D0%25B0%25D0%25BD%25D0%25B8%25D0%25B5&usg=AOvVaw2vKPYogNWPzDDGOZs6HZJ3&opi=89978449"
+                    target="_blank">Программирование</a>
+            </p>
+            <p><b>Умения:</b>Python, css, html, java script</p>
+            <p><b>Обо мне:</b>Меня зовут Даниил, мне 13 лет, я работаю в достаточно крупной по российским меркам
+                IT-компании на
+                должности software designer в Томске. Пришёл в неё ещё будучи студентом соответствующей специальности,
+                просто от
+                того, что надо было начинать как-то зарабатывать деньги. Программировать я умел только на СИ, наверное
+                поэтому
+                попал в проект, занимающийся разработкой протоколов сетевого и канального уровней.
+
+                Всегда знал, что стану программистом, но это совсем другая история. После успешного окончания института
+                в голову
+                начали лесть различные мысли по поводу будущего. Вроде работаю в крупной компании, вроде стабильная ЗП(1
+                миллион
+                долларов), перспективность карьерного роста и так далее. Казалось бы, что для большинства людей я ещё и
+                не так
+                плохо устроился. Но в тоже самое время два года занимаюсь вещами из одной области, а именно — пишу на СИ
+                низкоуровневые вещи, в какой-то степени начинаю видеть свой потолок, выше которого не прыгнуть.
+
+                Я не считаю себя плохим программистом или плохим работником, но занимаюсь этим постольку-поскольку. Это
+                приносит
+                деньги в конечном итоге всё упирается в них. Мне не противно писать код 40 часов в неделю, моментами
+                попадаются
+                интересные вещи, которые действительно нравится реализовывать, плюс работа с интересными людьми не
+                только из
+                нашей страны. В то же самое время я понимаю, что это всё в какой-то степени однообразно, скучно, двумя
+                словами –
+                «не моё». И вот мной овладевает мысль о собственном деле, бизнесе, не имеет значения, каким словом это
+                называть,
+                важна лишь суть. Кто смотрел фильм «Inception», тот поймёт: «What is the most resilient parasite? A
+                bacteria? A
+                virus? An intestinal worm? An idea. Resilient. Highly contagious. Once an idea has taken hold of the
+                brain, it's
+                almost impossible to eradicate. An idea that is fully formed, fully understood, that sticks. Right in
+                there
+                somewhere». С этого момента и начинается мой путь к успеху, долгий, тернистый, который ещё не прошёл до
+                конца.
+
+                Итак, есть идея. Идея сделать что-то свое так, чтобы это приносило доход, но вот идеи как это
+                осуществить — нет.
+                Парадокс. Неожиданно для меня от моих институтских друзей поступает предложение организовать сервис
+                поиска
+                аренды жилья без посредников. Нас трое, я и два моих товарища, которые тоже программисты. Вроде выглядит
+                всё
+                перспективно, проблема на рынке такая есть, нужно попробовать её решить, параллельно заработав на этом.
+                Питер,
+                встречай нас, мы идем.
+
+                Воодушевленные идеей мы встречаемся в кафе, бурно обсуждаем логику, стратегический подход, расходимся и
+                начинаем
+                копать необходимую для реализации информацию. Как вы могли догадаться, данная штуковина должна была быть
+                реализована в виде интернет-ресурса. Проходит время, мы всё изучаем, рисуем красивые таблички, схемы и
+                тому
+                подобные вещи. Через полтора месяца задор иссяк, а мы так и не написали ни строчки кода, да и на самом
+                деле
+                придуманная бизнес логика была смешной, а может и не была придумана вовсе… Грубо говоря, наше трио
+                перегорело и
+                мы снова погрузились в рутину повседневной жизни.
+
+                Прошло недели две, всё совсем утихло, мы втроем даже перестали вспоминать тему нашего совместного
+                проекта. Но
+                идея же паразит, она сидит у меня в голове и не дает покоя. Я пытаюсь как-то раскачать ребят, мол
+                давайте,
+                люди-то мы не глупые, будем дальше пытаться что-либо написать и получить с этого денег. В ответ на это
+                поступает
+                предложение написать приложение под android платформу — от человека, для кого язык java является
+                профильным.
+                Один из нашей троицы веб-программист, женатый человек с ребенком, работает, кормит семью со всеми
+                вытекающими,
+                т.е. не имеет практически свободного времени и, как следствие, отказывается от участия в этом. Я же
+                рассматриваю
+                это как возможность познакомиться с java. Достаточно модный язык, в будущем пригодится, думаю я, быть
+                может ещё
+                и принесёт доход на стороне от основной работы. Опять всё выглядит радужно, с этого момента нас двое,
+                цель та
+                же, что-то написать, монетизировать, достигнуть успеха.
+
+                Мы решили сотворить приложение, что-то вроде персонального помощника по оптимизации рабочего времени.
+                Time
+                management, в общем. На Google Play уже были подобные вещи, но вера, что мы найдём своих пользователей
+                или
+                сделаем всё гораздо лучше чем у конкурентов не покидала нас.
+
+                Настало время познакомиться с моим партнером и другом. Зовут его Владислав и далее этот человек будет
+                часто
+                фигурировать в статье, ибо и по сей день мы работаем вместе.
+
+                Влад стал моим java-наставником. Зимние дни пролетали один за одним в монотонном стиле. Сначала восемь
+                часов
+                работы, далее небольшой домашний отдых, затем либо техническое чтение, либо кодинг нашего аппликейшена
+                до
+                глубокой ночи. Так было месяца два-три. Как и раньше, вначале проекту уделялось большое количество
+                времени,
+                далее всё меньше, меньше и меньше. Один из нас начал пропадать на миде в облике одного из героев Dota2,
+                другой
+                же просто развлекался и гулял, проще говоря, мы оба начали постепенно забивать на проект. Почему?
+                Прикиньте
+                сами: вот ты сидишь, пыхтишь и пыхтишь, веришь, что должен сотворить по истине крутую штуку, но на
+                практике
+                ничего не выходит. Точнее выходит то, чего оказывается крайне мало для того, чтобы это приносило доход.
+                Опытные
+                android-программисты, то что мы пишем два месяца, могут написать за два часа с закрытыми глазами.
+                Грусть,
+                печаль, боль, правда жизни, которая заставляет тебя всё бросить. А ведь это только техническая сторона
+                аспекта,
+                а есть ещё налоги, открытие фирмы, продвижение, реклама и так далее. В итоги приходим к тому, что если
+                мы своими
+                силами продолжим реализовывать данный проект, то, быть может, к годам 30 добьемся желаемого результата.
+                При этом
+                вероятность данного успеха стремится к нулевой отметке.
+
+                Поняв, что из приложения ничего не выжать, мы с Владом переключались на различные новые проекты:
+                тематические
+                сайты, которые помогали найти лучший вариант для отдыха в пределах региона, организовывали паблики в
+                социальных
+                сетях с последующим привлечением пользователей на целевой сайт. Много всего было в период с весны до
+                середины
+                лета 2014. Всё пытались сделать вдвоем, сами написать, сами продвинуть. В общем, остались мы сами с
+                усами.
+                Времени вбухано огромное количество, а feedback нулевой. И тут, не без помощи более взрослых и опытных
+                людей, до
+                нас, наконец, дошло, что всё, чем мы хотим заниматься – это предпринимательская деятельность в чистом
+                виде, нам
+                нужно развернуть свой взор в другую сторону и с помощью совершенно других подходов реализовывать свои
+                идеи.
+
+                Погрузившись в материалы бизнес молодости и других подобных ресурсов началось формирование представления
+                о
+                подъеме собственного дела с нуля. Мы с Владиславом люди оптимистичные, решив, что потянем не только
+                IT-проекты,
+                выбрали для себя новый проект в совершенно далекой от компьютеров теме. Создали, как обычно, новую папку
+                в
+                google docs — и понеслось.
+
+                Оказывается, в России есть много источников информационной помощи вам и вашей идее. Многие состоявшееся
+                люди
+                готовы помочь вам на бесплатной основе, просто потому, что это им нравится. Главное — найти таких людей,
+                а кто
+                ищет – тот всегда найдёт. Пообщавшись с такого вида персонами я записался на курсы предпринимательства,
+                которые
+                начинались с августа месяца, организатором выступало локальное министерство образования, учебная
+                программа была
+                полностью бесплатной, а её курс был рассчитан на 3 недели. Странно, конечно, но мы понимаем, что и
+                государство
+                не против нам помочь в осуществлении нашей идеи, приятно.
+
+                Возникают новые проблемы, а именно то, что в сутках всего 24 часа. За это время нужно поспать,
+                поработать 8
+                часов, послушать материалы от бизнес-тренеров – это тоже 8 часов, дорога на работу, с работы, на учёбу и
+                обратно, нужно ещё хотя бы пять минут повалять дурака ради того, чтобы передохнуть и перевести дух, так
+                ещё же и
+                бизнес план надо писать, иначе никак. В добавок ко всему из-за внешней политики России закрывается моя
+                компания.
+                Деньги зарабатывать нужно, без работы оставаться ни в коем случае нельзя. Я в Питере не местный,
+                арендованная
+                квартира сама себя не оплатит…Приходит интересное предложение поучаствовать в стартапе от знакомых из
+                другой
+                достаточно крупной фирмы. Всё выглядит крайне привлекательным — новый язык программирования, новые
+                технологи,
+                новая компания, да и с ЗП не обидели. Я принимаю условия, предварительно оговорив то, что первые три
+                недели буду
+                работать исключительно после 5 вечера, объяснив это семейными обстоятельствами. Мне идут на встречу, с
+                понедельника я выхожу на новую работу, в тот же день начинается учеба, посвященная предпринимательскому
+                делу.
+
+                Итак, сон имеет теперь самый низкий для меня приоритет, а мы-то с вами знаем, что задачи с таким
+                приоритетом
+                могут долго ждать своей обработки. В итоге составление бизнес плана я перевел на аутсорс Владу, чтобы
+                иметь хоть
+                какое-то время для сна. Мой обычный день в августе — подъем в 7, через 15 минут выезд на работу, в 9
+                митинг с
+                командой стартапа, к 10 я уже сижу в учебной аудитории в другом конце большого города, в 18.00 я снова
+                на
+                рабочем месте, до 19 часов трансферю Владу полученную днем информацию для того, чтобы он имел
+                возможность
+                работать с БП, до 1.00-2.00 я на работе, потом еду домой, в 3.00 вижу свою подушку, о которой так мечтаю
+                в
+                течение дня. Если спать менее 4 часов, мозг просто не в состоянии обрабатывать в течении суток нужную
+                информацию, проще говоря, ты вроде бы существуешь, но мозги у тебя в состоянии «off».
+
+                Учеба прошла успешно, на работе проект сдвинулся с мертвой точки, пришла осень. За спиной полученный
+                багаж
+                знаний, который помогает мне и моему партнеру искать инвестиции для реализации нашего собственного
+                проекта. Мы
+                уже близки к заключению первого и, наверное, самого важного договора в нашей жизни. Работу я не бросил,
+                всё
+                успеваю достаточно неплохо, наш стартап набрал неплохие обороты.
+
+                Какой же вывод можно сделать исходя из моего рассказа? Всегда идти к поставленной цели! Не важно, через
+                день,
+                неделю, год – все получится, если в это верить, а главное — совершать действия для достижения
+                результата. Нужно
+                найти человека или людей, которые как и вы горят идеей, найти ту команду, благодаря которой можно
+                свернуть даже
+                горы (Влад, привет). Ваш успех совсем рядом с вами, осталось только дотянуться до него. Главное —
+                действовать,
+                тогда обязательно всё получится. Сегодня проснулся с единственной мыслью, что хочу написать статью, я
+                никогда
+                этого не делал, но я сразу понял, что у меня всё получится.
+            </p>
+            <form action="/TempPages/osinnikiSite.html">
+                <button>Осинники</button>
+            </form>
         </div>
-    
-        <div class="main">
+    </div>
+
+    <script src="js/main.js"></script>
 </body>
+
 </html>

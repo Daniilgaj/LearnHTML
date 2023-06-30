@@ -31,10 +31,15 @@ body {margin:0;}
 }
 
 .centerImage{
+    /*  */
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
+    margin-top: 10%;
+    margin-left: 2%;
+    width: 40%;
+}
+
+.divMain{
+    margin-left: 2%;
 }
 
 .cwait{
@@ -55,3 +60,67 @@ h4{
 .clasbodyOs{
     background-color: grey;
 }
+.aksdj {
+    background: #000;
+}
+
+.main_link{
+    border: 1px solid #333; /* Рамка */
+    background-color:aqua;
+    display: inline-block;
+    padding: 5px 15px; /* Поля */
+    text-decoration: none; /* Убираем подчёркивание */
+    color: #000; /* Цвет текста */
+    border-radius: 10%;
+  }
+.main_link:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,0.3); /* Тень */
+    background: linear-gradient(to bottom, #fcfff4, #e9e9ce); /* Градиент */
+    color: #a00
+}
+
+.button {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    border-radius: 10rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    text-decoration: none;
+  }
+  .button:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0cf;
+    border-radius: 10rem;
+    z-index: -2;
+  }
+  .button:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #008fb3;
+    transition: all 0.3s;
+    border-radius: 10rem;
+    z-index: -1;
+  }
+  .button:hover {
+    color: #fff;
+  }
+  .button:hover:before {
+    width: 100%;
+  }
+  
+

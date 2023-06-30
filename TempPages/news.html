@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <div class="navbar">
+        <a href="../index.html">
+            <i class="fa-solid fa-house"></i>
+            <label>Home</label>
+        </a>
+        <a href="/TempPages/news.html">
+            <i class="fa-solid fa-newspaper"></i>
+            <label>News</label>
+        </a>
+    </div>
+    <div class="main">
+        <input type="file" accept="image/*" onchange="loadFile(event)">
+        <img id="output"/>
+        <script>
+            var loadFile = function(event){
+                var output = document.getElementById('output');
+                output.src = URL.createObjectURL(event.target.files[0]);
+                output.onload = function(){
+                    URL.revokeObjectURL(output.src)
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>
