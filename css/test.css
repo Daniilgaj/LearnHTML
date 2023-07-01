@@ -1,3 +1,10 @@
+* {
+    /* margin: auto; */
+    /*Внешние отступы по умолчанию браузера*/
+    /* padding: auto; */
+    /*Внутриние отступы по умолчанию браузера*/
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@700&display=swap');
 
 body {
@@ -36,4 +43,25 @@ body {
     /*Расстояние между символами*/
     line-height: normal;
     /*Растояние между строками*/
+}
+
+.block {
+    background: white;
+    /*Цвет фона блока*/
+    height: 80px;
+    /*Высота блока*/
+    width: 200px;
+    /*Ширина блока*/
+    border: 2px dotted black;
+    /*Обводка блока и её стиль*/
+    color: black;
+    /*Цвет символов в блоке*/
+    border-radius: 15px;
+    /*Скругление углов блока*/
+    opacity: 1;
+    /*Прозрачность блока*/
+    margin-left: 20px;
+    /*Отступ внешней стороны блока*/
+    padding: 0px;
+    /*Отступ внутриней стороны блока*/
 }
