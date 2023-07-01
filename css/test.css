@@ -1,14 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@700&display=swap');
+
 body {
     background-color: black;
     /*Цвет фона*/
-    color: #e65f0b;
+    color: yellow;
     /*Цвет текста*/
-    background-image: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v1016-c-08_1-ksh6mza3.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=f584d8501c27c5f649bc2cfce50705c0');
+    background-image: url('https://phonoteka.org/uploads/posts/2022-02/1645345943_58-phonoteka-org-p-fon-dlya-prevyushki-62.jpg');
     /*Картинка в фон*/
     background-repeat: no-repeat;
     /*Повторение картинки*/
     background-position: center;
     /*Позиция картинки*/
-    height: 100vh;/*Высота, vh=%*/
-    background-size: cover;/*Размер фона*/
+    height: 100vh;
+    /*Высота, vh=%*/
+    background-size: cover;
+    /*Размер фона*/
+
+}
+
+.main_text {
+    text-align: center;
+    /*Расположение текса*/
+    font-size: 20px;
+    /*Размер текста*/
+    font-style: italic;
+    /*Наклон текста*/
+    font-weight: 700;
+    /*Жирность текста*/
+    font-family: 'Agdasima', sans-serif;
+    /*Шрифт текста*/
+    text-transform: lowercase;
+    word: spacing normal;
+    /*Расстояние между словами*/
+    letter-spacing: 2px;
+    /*Расстояние между символами*/
+    line-height: normal;
+    /*Растояние между строками*/
 }
