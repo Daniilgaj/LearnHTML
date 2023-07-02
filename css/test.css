@@ -1,7 +1,7 @@
 * {
-    /* margin: auto; */
+    margin: 0;
     /*Внешние отступы по умолчанию браузера*/
-    /* padding: auto; */
+    padding: 0;
     /*Внутриние отступы по умолчанию браузера*/
 }
 
@@ -22,7 +22,7 @@ body {
     /*Высота, vh=%*/
     background-size: cover;
     /*Размер фона*/
-
+    height: 2000px;
 }
 
 .main_text {
@@ -45,23 +45,80 @@ body {
     /*Растояние между строками*/
 }
 
-.block {
-    background: white;
-    /*Цвет фона блока*/
-    height: 80px;
-    /*Высота блока*/
-    width: 200px;
-    /*Ширина блока*/
-    border: 2px dotted black;
-    /*Обводка блока и её стиль*/
+/* .block { */
+/* background: white; */
+/*Цвет фона блока*/
+/* height: 80px; */
+/*Высота блока*/
+/* width: 200px; */
+/*Ширина блока*/
+/* border: 2px dotted black; */
+/*Обводка блока и её стиль*/
+/* color: black; */
+/*Цвет символов в блоке*/
+/* border-radius: 15px; */
+/*Скругление углов блока*/
+/* opacity: 1; */
+/*Прозрачность блока*/
+/* margin-left: 20px; */
+/*Отступ внешней стороны блока*/
+/* padding: 0px; */
+/*Отступ внутриней стороны блока*/
+/* float: left; */
+/*Позиционирование блока*/
+#some_block {
+    background: red;
+    color: #fff;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    left: 20px;
+    top: 50px;
+}
+
+#header,
+#footer {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    border-bottom: 4px solid silver;
+    background: #333;
+    color: #fff;
+    line-height: 50px;
+    /*Здесь для того чтобы текст был идеально по вертикали по верху*/
+    margin-bottom: 50px;
+    float: left;
+}
+
+#main {
+    width: 50%;
+    margin-left: 10%;
+    background: #fafafa;
+    border: 1px solid silver;
+    padding: 20px 2.5%;
+    float: left;
     color: black;
-    /*Цвет символов в блоке*/
-    border-radius: 15px;
-    /*Скругление углов блока*/
-    opacity: 1;
-    /*Прозрачность блока*/
-    margin-left: 20px;
-    /*Отступ внешней стороны блока*/
-    padding: 0px;
-    /*Отступ внутриней стороны блока*/
+}
+
+#aside {
+    width: 20%;
+    padding: 20px 2.5%;
+    margin-left: 5%;
+    background: #fafafa;
+    border: 1px solid silver;
+    float: left;
+    position: relative;
+    color: black;
+    bottom: -10px;
+    left: -2px;
+}
+
+#footer {
+    margin-bottom: 0;
+    margin-top: 50px;
+    border-bottom: 0;
+    border-top: 4px solid silver;
 }
