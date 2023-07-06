@@ -51,7 +51,60 @@ console.log("Результат: " + (srt_1 + srt_2));
 
 console.log("Math: " + Math.PI);
 //Вывод числа ПИ
-console.log("Math: " + Math.min(4,6,7,9,12));
+console.log("Math: " + Math.min(4, 6, 7, 9, 12));
 //Вывод минимального числа
-console.log("Math: " + Math.max(4,6,7,9,12))
+console.log("Math: " + Math.max(4, 6, 7, 9, 12))
 //Вывод максимального числа
+
+var number = 15;
+if (number != 15) {
+    console.log("Ok!");
+} else if (number < 10) {
+    console.log("Ok!");
+}
+else if (number == 7) {
+    console.log("Ok!");
+}
+else if (number >= 15) {
+    console.log("Ok!")
+}
+else {
+    console.log("Error!");
+}
+//Условие и то что будет выполнятся при его истине
+//'!=' - не равно
+
+var isHasHouse = true;
+if (number == 5 || isHasHouse == true) {
+    console.log("Very ok!");
+}
+// '||' - это знак или
+
+if (number == 5 && isHasHouse == true) {
+    console.log("Nice!");
+}
+else {
+    console.log("Bad!");
+}
+// '&&' -это знак и
+
+var stroka = true;
+switch (stroka) {
+    case "4":
+        console.log("stroka равна 4!");
+        break;
+    case "45":
+        console.log("stroka равна 45!");
+        break;
+    case "word":
+        console.log("stroka равна word!");
+        break;
+    case true:
+        console.log("stroka равна истине!");
+        break;
+    default:
+        console.log("Default");
+}
+//Одно и тоже что и if и else
+// case-случай, default-искл, break-окончание строки case
+// Но можно проверять только на значения!!!, >, <,=,!= - нельзя
