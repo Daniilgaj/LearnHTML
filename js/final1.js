@@ -170,11 +170,53 @@ for(var c = 0; c < mass.length; c++ ) {
 //console.log(data);
 //Окно с возможностью ввести возраст который станет равным переменной и выведится в консоль
 
-var person = null;
+//var person = null;
 //null=ничего
-if(confirm("Вы точно уверены?")) {
-person = prompt("Введите ваше имя");
-alert("Привет, " + person);
-} else {
-alert("Вы нажали на .Отмена. ");
+//if(confirm("Вы точно уверены?")) {
+//person = prompt("Введите ваше имя");
+//alert("Привет, " + person);
+//} else {
+//alert("Вы нажали на .Отмена. ");
+//}
+
+function info(rand) {
+    console.log(rand + "!");
 }
+//Создание функции и её тело которое будет выполнятся при вызывании функции
+//В скобочках вводятся параметры(как переменная) которые функция будет принимать, название любое
+info("Hello");
+//В скобках вводится то что будет выводится
+function summa(a, b) {
+    var res = a + b;
+    info(res);
+}
+summa(5, 7);
+
+function summas(arr) {
+    var sum = 0;
+    for(var i = 0; i < arr.length; i++) {
+    sum += arr[i];
+    }
+    console.log(sum);
+}
+
+var array = [6, 8, 1];
+var array_2 = [6, 8, 1, 7];
+var array_3 = [6, 8, 1, 90];
+summas(array);
+summas(array_2);
+summas(array_3);
+
+var num_4 = 10;
+function nevaz() {
+    console.log(num_4);
+}
+nevaz();
+//Вывилось потому что переменная является глобальной
+
+function killa() {
+    var num_5 = 10;
+    console.log(num_5);
+}
+killa();
+//А эта переменная является локальной и она видна только в пределах функции
