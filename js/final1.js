@@ -220,3 +220,20 @@ function killa() {
 }
 killa();
 //А эта переменная является локальной и она видна только в пределах функции
+
+var counter = 0;
+
+function onClickButton(el) {
+    counter++;
+    el.innerHTML = "Вы нажали на кнопку: " + counter;
+    el.style.background = "red";
+    el.style.cssText = "border-radius: 5px; border: 2; font-size:20px";
+}
+//counter++ считается как подсчитывание, например сколько раз нажали на кнопку
+//el.innerHTML - el - параметр, innerHtml с помощью него можно внутрь обьекта (button) сможем установить любой текст 
+
+function onInput(el) {
+    if(el.value == "Hello")
+    alert("И тебе привет!");
+  console.log(el.value);
+}
