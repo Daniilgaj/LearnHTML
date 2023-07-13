@@ -237,3 +237,18 @@ function onInput(el) {
     alert("И тебе привет!");
   console.log(el.value);
 }
+
+var namew = 0;
+ var id = setInterval(function() {
+namew++;
+console.log("Прошло секунд: " + namew);
+if(namew == 15)
+  clearInterval(id);
+}, 1000);
+//setInterval (Функция(можно без названия)() { на сколько увеличится переменная, вывод}, интервал милисекунд после которых будет выполнятся код
+//в условии сказано что если переменная будет равна 15 то интервал остановится
+
+setTimeout(function() {
+console.log("Timer is working");
+}, 500);
+//одно и тоже что и интервал только не нужно останавливать
