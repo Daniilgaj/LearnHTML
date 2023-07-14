@@ -252,3 +252,39 @@ setTimeout(function() {
 console.log("Timer is working");
 }, 500);
 //одно и тоже что и интервал только не нужно останавливать
+
+
+var date = new Date();
+
+//console.log(date.getFullYear());
+//Вывод сейчашнего года
+//console.log(date.getMonth() + 1);
+//Вывод сейчашнего месяца, + 1 потому что отсчёт начинается с 0!
+date.setHours(23);
+//Установление своей даты(можно с минутами, часами и секундами)
+
+var arr_1 = [8,90,5,7,0,8,9];
+//console.log(arr_1.length);
+//Длина массива
+//console.log(arr_1.join("! ! !"));
+//Обьеденение символов
+//console.log(arr_1.sort().join(", "));
+//Сортировка массива с обьеденением символов
+
+class Pers {
+    constructor(name, age, happiness) {
+        this.nam = name;
+        this.ag = age;
+        this.hap = happiness;
+    }
+}
+var alex = new Pers('Alex', 45, true);
+var bob = new Pers('Bob', 25, false);
+console.log(alex.nam);
+//Вывод параметра nam обьекта alex
+console.log(alex.ag);
+//Вывод второго параметра обьекта alex
+console.log(alex.hap);
+//Вывод третьего параметра обьекта alex
+console.log(bob.nam);
+//Вывод параметра nam обьекта bob
